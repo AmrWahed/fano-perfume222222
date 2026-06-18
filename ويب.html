@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر العطور</title>
+    <style>
+        body {
+            background: url('background.jpg') no-repeat center center fixed; /* صورة الخلفية */
+            background-size: cover;
+            background-color: rgba(255, 223, 186, 0.33); /* لون خلفية مع شفافية 33% */
+            color: #b8860b;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .header {
+            background-color: #b8860b;
+            color: white;
+            padding: 10px;
+            font-size: 24px;
+        }
+        .search-box {
+            margin: 20px;
+        }
+        .product {
+            border: 1px solid #b8860b;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 200px;
+            cursor: pointer;
+        }
+        .lang-switch {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .category-buttons {
+            margin: 20px;
+        }
+        .category-buttons button {
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            background-color: #b8860b;
+            color: white;
+            cursor: pointer;
+        }
+        .category {
+            display: none;
+        }
+        .category.active {
+            display: block;
+        }
+        .footer {
+            background-color: #b8860b;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <button onclick="switchLanguage('ar')">العربية</button>
+        <button onclick="switchLanguage('en')">English</button>
+    </div>
+    <div class="header">متجر العطور</div>
+    <input class="search-box" type="text" placeholder="ابحث عن المنتجات...">
+    
+    <div class="category-buttons">
+        <button onclick="showCategory('perfumes')">العطور</button>
+        <button onclick="showCategory('mukhammariyat')">المخمريات</button>
+        <button onclick="showCategory('other')">خانة أخرى</button>
+    </div>
+    
+    <div id="perfumes" class="category active">
+        <div class="product" onclick="openProductPage('عطر فرنسي فاخر ')">عطر فرنسي فاخر </div>
+        <div class="product" onclick="openProductPage('عطر شرقي مميز ')">عطر شرقي مميز </div>
+        <div class="product" onclick="openProductPage('عطر فانو خاص بنا ')">عطر فانو خاص بنا </div>
+    </div>
+    
+    <div id="mukhammariyat" class="category">
+        <div class="product" onclick="openProductPage('مخمريات العود')">مخمريات العود</div>
+        <div class="product" onclick="openProductPage('مخمريات فانو')">مخمريات فانو</div>
+        <div class="product" onclick="openProductPage('مخمريات المسك الشيوخ')">مخمريات المسك الشيوخ</div>
+        <div class="product" onclick="openProductPage('مخمريات مسك العرائس')">مخمريات مسك العرائس</div>
+    </div>
+    
+    <div id="other" class="category">
+        <div class="product" onclick="openProductPage('منتج إضافي 1')">منتج إضافي 1</div>
+    </div>
+    
+    <div class="footer">
+        <span>من نحن<br> 
+          فانو للعطور براند مخصص لانتاج العطور الشرقية و الغربية بجودة فائقة <br>| معلومات التواصل</span><br>
+        <a href="#">فيسبوك</a> |
+        <a href="#">واتساب</a> |
+        <a href="#">تيليجرام (خاص بالجملة)</a><br>
+        <span>جميع الحقوق محفوظة &copy; 2025</span>
+    </div>
+    
+    <script>
+        function switchLanguage(lang) {
+            if (lang === 'en') {
+                document.documentElement.lang = 'en';
+                document.documentElement.dir = 'ltr';
+                document.querySelector('.header').innerText = 'Perfume Store';
+                document.querySelector('.search-box').placeholder = 'Search for products...';
+            } else {
+                document.documentElement.lang = 'ar';
+                document.documentElement.dir = 'rtl';
+                document.querySelector('.header').innerText = 'متجر العطور';
+                document.querySelector('.search-box').placeholder = 'ابحث عن المنتجات...';
+            }
+        }
+        
+        function showCategory(category) {
+            document.querySelectorAll('.category').forEach(cat => cat.classList.remove('active'));
+            document.getElementById(category).classList.add('active');
+        }
+        
+        function openProductPage(productName) {
+            window.location.href = `product.html?name=${encodeURIComponent(productName)}`;
+        }
+    </script>
+</body>
+</html>

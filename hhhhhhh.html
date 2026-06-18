@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>رسالة منبثقة عند هوفر</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      background-color: #f4f4f4;
+      padding: 30px;
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 18px;
+      padding: 10px;
+      background-color: #f1c40f;
+      border-radius: 10px;
+    }
+
+    /* الرسالة المنبثقة */
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 220px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%; /* يحدد مكان الرسالة أسفل العنصر */
+      left: 50%;
+      margin-left: -110px; /* لتحريك الرسالة بشكل مناسب */
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    /* ظهور الرسالة عند التمرير فوق العنصر */
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tooltip">
+    مرر فوقي
+    <div class="tooltiptext">هذه هي الرسالة المنبثقة التي تظهر عند التمرير فوق العنصر!</div>
+  </div>
+
+</body>
+</html>

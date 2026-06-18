@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عطور شرقية</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 150px;
+      background-color: #333;
+      color: white;
+      z-index: 1000;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .header-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .header-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 42px;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    main {
+      padding-top: 170px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .products-section {
+      width: 100%;
+      max-width: 1200px;
+      padding: 30px 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-image {
+      width: 175px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+
+    .product-button {
+      background-color: #d87a0e;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-button:hover {
+      background-color: #b66a09;
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+      background-color: #f1c40f;
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 230px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -115px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      z-index: 1100;
+    }
+
+    .back-button:hover {
+      background-color: #388e3c;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="head(o).png" alt="عطور شرقية" class="header-image" />
+    <div class="header-text">هنا ستجد معظم عطور النيش المميزة</div>
+  </header>
+
+  <a href="index.html" class="back-button">رجوع</a>
+
+  <main>
+
+    <!-- القسم الأول -->
+    <div class="products-section">
+      <!-- كرر هذا القالب لكل منتج -->
+      <div class="product-card">
+        <img src="افغانو.png" alt="عطور نيش" class="product-image">
+      
+        <p onclick="oudharmaing('oudharmaing')" class="product-name">بلاك افغانو</p>
+        <button class="product-button" onclick="location.href='order.html?product=بلاك افغانو'">اطلب الان</button>
+
+        <div class="tooltip">
+           ! مرر لاظهار المعلومات
+            <div class="tooltiptext">
+              بلاك افغانو : عطر نيش عطر ذكوري بحت  و يجمع بين عشب القنب و العود و التبغ,اول اصداره عام 2009 
+                 حجم 40مللي:400ج
+                 حجم 50مللي:500ج
+                 حجم 80مللي:800ج
+                 حجم 100مللي:1000ج
+
+
+            </div>
+          </div>
+    </div>
+
+    <div class="product-card">
+        <img src="براندا.png" alt="عطور فرنسية" class="product-image">
+        <p class="product-name">براند</p>
+        
+        <button class="product-button" onclick="location.href='order.html?product= براند' ">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                
+              براندا: عطر شرقي  ذكوري خشبي و يسكي مع لمسة مسك من نفس شركة اللي منتجة عطر الشهير بلاك افغانو، تم إصداره عام 2016
+                 حجم 40مللي:400ج
+                 حجم 50مللي:500ج
+                 حجم 80مللي:800ج
+                 حجم 100مللي:1000ج
+
+
+             </div>
+           </div>
+    </div>
+
+   
+
+    <div class="product-card">
+
+        <img src="امواج.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">عطر امواج</p>
+        <button class="product-button" onclick="location.href='order.html?product=عطر امواج'">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+              امواج ريفليكشن:عطر راقٍ ويعتد من ايقونة عطور النيش بسبب تميزه بثباته و مكوناته و قوته و يتميز بمزيج من الأزهار والتوابل ليضفي لمسة أنيقة وفريدة                
+                حجم 40مللي:400ج
+                 حجم 50مللي:500ج
+                 حجم 80مللي:800ج
+                 حجم 100مللي:1000ج
+
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="بكرات.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">بكرات روج</p>
+        <button class="product-button" onclick="location.href='order.html?product=بكرات روج  '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+              بكرات روج: عطر شرقي زهري فاخر من ميزون فرانسيس  يجمع بين الياسمين و المسك ، تم إصداره عام 2015.
+                 حجم 40مللي:400ج
+                 حجم 50مللي:500ج
+                 حجم 80مللي:800ج
+                 حجم 100مللي:1000ج
+
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="رووز فانليا.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">روز فانليا </p>
+        <button class="product-button" onclick="location.href='order.html?product=روز فانليا  '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+
+              روز فانيليا:عطر زهري حلو يبرز رائحة الورد والفانيليا بشكل مميز، مع لمسات من الفواكه الحلوة. عطر ناعم وأنيق يناسب الأوقات النهارية والمناسبات الهادئة
+                 حجم 40مللي:300ج
+                 حجم 50مللي:350ج
+                 حجم 80مللي:550ج
+                 حجم 100مللي:620ج
+
+
+             </div>
+           </div>
+    </div>
+    <div class="product-card">
+        <img src="ريد توباكو.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">ريد توباكو</p>
+        <button class="product-button" onclick="location.href='order.html?product=ريد توباكو  '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+              ريد توباكو:عطر شرقي خشبي دافئ يحتوي على مزيج غني من التبغ والفانيليا والتوابل. يعكس القوة والدفء ويعد مثاليًا للأجواء المسائية والباردة تم اصداره 2017.
+              حجم 40مللي:300ج
+                 حجم 50مللي:350ج
+                 حجم 80مللي:550ج
+                 حجم 100مللي:620ج
+
+
+             </div>
+           </div>
+    </div>
+
+
+
+
+    <div class="product-card">
+        <img src="السائر.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">السائر</p>
+      <button class="product-button" onclick="location.href='order.html?product=السائر '">اطلب الان </button>
+      <div class="tooltip">
+          ! مرر لاظهار المعلومات
+           <div class="tooltiptext">
+            السائر: شرقي تابلي بفوحان متوسط إلى قوي، يتميز برائحة حادة ومميزة تناسب الرجل الواثق والجريء.
+           حجم 40مللي:300ج
+           حجم 50مللي:350ج
+           حجم 80مللي:550ج
+           حجم 100مللي:620ج
+
+
+           </div>
+         </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="product-card">
+        <img src="ليتون.png" alt="عطور فرنسية" class="product-image">
+        <p class="product-name"> ليتون</p>
+        <button class="product-button" onclick="location.href='order.html?product=ليتون  '">اطلب الان </button>
+
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+              دي مارلي ليتون: شرقي فاكهي بفوحان قوي جدًا، يحتوي على مزيج من الفانيليا والبطابق الحار، يمنحك حضورًا فاخرًا ودافئًا.
+                              حجم 40مللي:300ج
+                حجم 50مللي:350ج
+                حجم 80مللي:550ج
+                حجم 100مللي:620ج
+
+
+             </div>
+           </div>
+
+    </div>
+
+    <div class="product-card">
+        <img src="امجنيشن.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">أمجنيشن</p>
+        <button class="product-button" onclick="location.href='order.html?product=أمجنيشن '">اطلب الان </button>
+
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+              اميجنيشن: عطر بحري و منعش في فصل الصيف يتميز بفوحان غير طبيعي ، تم إصداره عام 2023.
+                 حجم 40مللي:300ج
+                 حجم 50مللي:350ج
+                 حجم 80مللي:550ج
+                 حجم 100مللي:620ج
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="ميجمار.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">ميجمار</p>
+        <button class="product-button" onclick="location.href='order.html?product=ميجمار  '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+
+              ميجمار:من بارتي باريس وهو عطور النيش غامض وفخم يتميز بمزيج من التوابل والروائح الخشبية يمنح طابعًا جريئًا وجذابًا
+              حجم 40مللي:250ج
+                 حجم 50مللي:300ج
+                 حجم 80مللي:450ج
+                 حجم 100مللي:500ج
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="كريد سيلفر .png" alt="عطور نيش" class="product-image">
+        <p class="product-name"> كريد سيلفر مونتن وتر(وايت)</p>
+        <button class="product-button" onclick="location.href='order.html?product=كريدسيلفر  '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+              كريد سيلفر مونتن وتر(وايت): عطر رجالي فاخر ومنعش من كريد، تم إصداره عام 2012
+       
+                 حجم 40مللي:250ج
+                 حجم 50مللي:300ج
+                 حجم 80مللي:450ج
+                 حجم 100مللي:500ج
+
+
+             </div>
+           </div>
+    </div>
+    <div class="product-card">
+        <img src="كريد افينتوس.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">كريد افينتوس </p>
+        <button class="product-button" onclick="location.href='order.html?product=شي عود '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+              كريد أفنتوس: عطر رجالي فاخر ومنعش من كريد، تم إصداره عام 2010
+              
+                حجم 40مللي:250ج
+                 حجم 50مللي:300ج
+                 حجم 80مللي:450ج
+                 حجم 100مللي:500ج
+
+
+             </div>
+           </div>
+    </div>
+
+
+
+
+
+   <!--  row 1  كروت المنتجات -->
+
+
+    <div class="product-card">
+        <img src="اوركيد.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">بلاك اوركيد توم فورد </p>
+        <button class="product-button" onclick="location.href='order.html?product=بلاك اوركيد توم فورد '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+
+              توم فورد بلاك أوركيد: عطر فاخر وقوي ينتمي إلى عائلة الأزهار الشرقية، يتميز برائحة غنية من الأوركيد الأسود، التوابل، والشوكولاتة، ويعتبر من العطور الغامضة والمثيرة. تم إصداره في عام 2006.
+              والعنبر والتوابل ليعطي حضورًا قويًا ومميزًا.
+                 حجم 40مللي:300ج
+                 حجم 50مللي:350ج
+                 حجم 80مللي:550ج
+                 حجم 100مللي:620ج
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="توباكو.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">توباكو فانليا توم فورد</p>
+        <button class="product-button" onclick="location.href='order.html?product=توباكو فانليا توم فورد '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+
+              توم فورد توباكو فانليا: عطر غني ودافئ يجمع بين رائحة التبغ والفانيليا مع لمسات من التوابل الحارة والخشب، مما يعطيه طابعًا أنيقًا وعميقًا. تم إصداره في عام 2007
+              حجم 40مللي:300ج
+              حجم 50مللي:350ج
+              حجم 80مللي:550ج
+              حجم 100مللي:620ج
+
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="امبر ليذر.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">امبر ليذر توم فورد</p>
+        <button class="product-button" onclick="location.href='order.html?product=قصة امباريال ليذر '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+              توم فورد أمبر ليزر: عطر دافئ وخشبي يدمج بين الروائح الحارة من العنبر والفانيليا مع لمسات من التوابل، مما يجعله عطرًا مثاليًا للمناسبات المسائية. تم إصداره في عام 2018.
+              حجم 40مللي:300ج
+              حجم 50مللي:350ج
+              حجم 80مللي:550ج
+              حجم 100مللي:620ج
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="نوار.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">نوار اكستريم توم فورد </p>
+        <button class="product-button" onclick="location.href='order.html?product=نوار اكستريم توم فورد   '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+
+              توم فورد نوار اكستريم: عطر شرقي خشبي مكثف يتميز بمزيج من البرغموت، الفلفل، والجلد مع لمسات من الفانيليا والعنبر، مما يجعله عطرًا فاخرًا وجذابًا. تم إصداره في عام 2018.
+              حجم 40مللي:250ج
+              حجم 50مللي:300ج
+              حجم 80مللي:450ج
+              حجم 100مللي:500ج
+
+
+             </div>
+           </div>
+    </div>
+
+
+
+    <div class="product-card">
+      <img src="40عقدة.png" alt="عطور نيش" class="product-image">
+      <p class="product-name">عقدة40 </p>
+      <button class="product-button" onclick="location.href='order.html?product=40عقدة   '">اطلب الان </button>
+      <div class="tooltip">
+          ! مرر لاظهار المعلومات
+           <div class="tooltiptext">
+
+            عقدة40: عطر من دار زيرجوف خشبي بحري بفوحان قوي جدًا، يعكس روائح البحر والنسيم العليل، عطر فاخر ومميز
+            حجم 40مللي:300ج
+            حجم 50مللي:350ج
+            حجم 80مللي:550ج
+            حجم 100مللي:620ج
+
+
+           </div>
+         </div>
+  </div>
+
+
+  <div class="product-card">
+    <img src="اربابورا.png" alt="عطور نيش" class="product-image">
+    <p class="product-name">اربابورا </p>
+    <button class="product-button" onclick="location.href='order.html?product=اربابورا   '">اطلب الان </button>
+    <div class="tooltip">
+        ! مرر لاظهار المعلومات
+         <div class="tooltiptext">
+
+
+          أربابورا :فاكهي خشبي بفوحان قوي جدًا، يتميز برائحة مكثفة من الفواكه الاستوائية والأخشاب الفاخرة.
+          
+          حجم 40مللي:300ج
+          حجم 50مللي:350ج
+          حجم 80مللي:550ج
+          حجم 100مللي:620ج
+
+
+         </div>
+       </div>
+</div>
+
+
+
+<div class="product-card">
+  <img src="السكندريا 2.png" alt="عطور نيش" class="product-image">
+  <p class="product-name">السكندريا 2 </p>
+  <button class="product-button" onclick="location.href='order.html?product=السكندريا 2   '">اطلب الان </button>
+  <div class="tooltip">
+      ! مرر لاظهار المعلومات
+       <div class="tooltiptext">
+
+        الكسندريا 2: شرقي خشبي بفوحان قوي جدًا، يتميز بالفخامة والدفء بفضل مزيج العود والفانيليا
+        حجم 40مللي:300ج
+        حجم 50مللي:350ج
+        حجم 80مللي:550ج
+        حجم 100مللي:620ج
+
+
+       </div>
+     </div>
+</div>
+
+
+
+<div class="product-card">
+  <img src="ناكسوس.png" alt="عطور نيش" class="product-image">
+  <p class="product-name">ناكسوس </p>
+  <button class="product-button" onclick="location.href='order.html?product=ناكسوس   '">اطلب الان </button>
+  <div class="tooltip">
+      ! مرر لاظهار المعلومات
+       <div class="tooltiptext">
+
+        ناكسوس: شرقي تابلي بفوحان قوي جدًا، مزيج من العسل والتبغ يجعله دافئًا ومغريًا في الأجواء الباردة.
+        حجم 40مللي:300ج
+        حجم 50مللي:350ج
+        حجم 80مللي:550ج
+        حجم 100مللي:620ج
+
+
+       </div>
+     </div>
+</div>
+
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
+
+
+<script>
+  //o دالة للتنقل إلى صفحة العطور الشرقية
+  function order() {
+  window.location.href = "order.html";
+  }
+  
+  </script>

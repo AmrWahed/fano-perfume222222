@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فانو العطور</title>
+
+</head>
+<body>
+    <link rel="stylesheet" href="index.css">
+    <header class="header">
+        <img src="logo100.png" width="285px" height="200px"   alt="لوجو فانو"
+        style="float: right;">
+        
+        <h3>فانو للعطور</h3>
+      </header>
+
+      <input
+        class="search-box"
+        type="text"
+        id="searchInput"
+        placeholder="ابحث عن المنتجات..."
+        onkeyup="searchProducts()">
+        
+      <button onclick="searchProducts()" class="search-button">بحث</button>
+    
+    <div class="category-buttons">
+
+        <button onclick="handleClick('perfumes')"
+        style="text-align: center; border: 2px solid #000; background: #d6a400; padding: 10px;">
+    <img src="perfume.jpg" alt="أيقونة" width="150">
+    <span style="display: block;">عطور</span>
+
+        </button>
+
+<button onclick="handleClick('mukhammariyat')"
+        style="text-align: center; border: 2px solid #000; background: #d6a400; padding: 10px;">
+    <img src="مخمريات.png" alt="أيقونة" width="124">
+    <span style="display: block;">مخمريات</span>
+</button>
+
+<button onclick="handleClick('other')"
+        style="text-align: center; border: 2px solid #000; background: #d6a400; padding: 10px;">
+    <img src="بخور.jfif" alt="أيقونة" width="50">
+    <span style="display: block;">اخري</span>
+</button>
+
+    </div>
+
+    <div id="perfumes" class="category active"style="
+    width: 100vw;                /* ياخد عرض الشاشة كله */
+    height: 100vh;               /* لو عايز كمان في نص الشاشة عموديًا */
+    display: grid-row: auto;;
+
+    justify-content: center;     /* في نص الشاشة أفقيًا */
+    align-items: center;         /* في نص الشاشة رأسيًا */
+    background-color: #090909;      /* لون الخلفية للتوضيح (اختياري) */
+">
+
+        <!-- عنصر عطر بصورة ومربع ثابت -->
+        <button class="product" onclick="f('French Perfumes')" style="
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #b8860b;
+            border: 1px solid #000000;
+            border-radius: 12px;
+            padding: 10px;
+            width: 350px;
+            height: 90px;
+            box-sizing: border-box;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 10px auto; /* علشان يبقى في النص */
+        ">
+            <img src="perfum_french2.png" alt="عطور فرنسية فاخرة"
+                style="width: 75px; height: 65px; border-radius: 7px;">
+            <p style="margin: 0; font-size: 26px; font-weight: bold; color: white;">عطور فرنسية فاخرة</p>
+        </button>
+
+  
+        <button class="product" onclick="o('Oriental Perfumes')" style="
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #b8860b;
+            border: 1px solid #000000;
+            border-radius: 12px;
+            padding: 10px;
+            width: 350px;
+            height: 90px;
+            box-sizing: border-box;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 10px auto; /* علشان يبقى في النص */
+        ">
+            <img src="perfum_Oriental.png" alt="عطور شرقية فاخرة"
+                style="width: 75px; height: 65px; border-radius: 7px;">
+            <p style="margin: 0; font-size: 26px; font-weight: bold; color: white;">عطور شرقية فاخرة</p>
+        </button>
+
+        <!---->        
+        
+        <button class="product" onclick="n()" style="
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #b8860b;
+            border: 1px solid #000000;
+            border-radius: 12px;
+            padding: 10px;
+            width: 350px;
+            height: 90px;
+            box-sizing: border-box;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 10px auto; /* علشان يبقى في النص */
+        ">
+            <img src="perfum_Oriental.png" alt="عطور شرقية فاخرة"
+                style="width: 75px; height: 65px; border-radius: 7px;">
+            <p style="margin: 0; font-size: 26px; font-weight: bold; color: white;">عطور نيش مميزة </p>
+        </button>
+        <!---->
+         <button class="product" onclick="fano('fano Perfumes')" style="
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #b8860b;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        padding: 10px;
+        width: 350px;
+        height: 90px;
+        box-sizing: border-box;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        overflow: hidden;
+        margin: 10px auto; /* علشان يبقى في النص */
+    ">
+        <img src="perfum_fano.png" alt="عطور فانو خاصة"
+            style="width: 75px; height: 65px; border-radius: 7px;">
+        <p style="margin: 0; font-size: 26px; font-weight: bold; color: white;">عطور فانو خاصة</p>
+        </div>
+    </button>
+
+
+
+
+
+
+    <!--المحمريات-->>
+    
+    <div id="mukhammariyat" class="category"style="
+    width: 100vw;                /* ياخد عرض الشاشة كله */
+    height: 100vh;               /* لو عايز كمان في نص الشاشة عموديًا */
+
+    justify-content: center;     /* في نص الشاشة أفقيًا */
+    align-items: center;         /* في نص الشاشة رأسيًا */
+    background-color: #220;      /* لون الخلفية للتوضيح (اختياري) */
+">
+        <!---->
+
+
+        <button class="product" onclick="makh_oud('Oriental Perfumes')" style="
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #b8860b;
+            border: 1px solid #000000;
+            border-radius: 12px;
+            padding: 10px;
+            width: 350px;
+            height: 90px;
+            box-sizing: border-box;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 10px auto; /* علشان يبقى في النص */
+        ">
+        <img src="مخمرية_عود.png" alt="عطور فانو خاصة"
+        style="width: 75px; height: 65px; border-radius: 7px;">
+            <p style="margin: 0; font-size: 26px; font-weight: bold; color: white;">مخمريات شرقية فاخرة</p>
+        </button>
+
+
+
+        <!---->
+        <button class="product" onclick="makh_oud('Oud Mukhammariyat')" style="
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #b8860b;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        padding: 10px;
+        width: 350px;
+        height: 90px;
+        box-sizing: border-box;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        overflow: hidden;
+        margin: 10px auto; /* علشان يبقى في النص */
+    ">
+        <img src="مخمرية_مسك.png" alt="عطور فانو خاصة"
+            style="width: 75px; height: 65px; border-radius: 7px;">
+        <p style="margin: 0; font-size: 26px; font-weight: bold; color: white;">مخمريات المسك</p>
+        </button>
+        <!---->
+        <button class="product" onclick="openProductPage('Oud Mukhammariyat')" style="
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #b8860b;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        padding: 10px;
+        width: 350px;
+        height: 90px;
+        box-sizing: border-box;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        overflow: hidden;
+        margin: 10px auto; /* علشان يبقى في النص */
+    ">
+        <img src="مخمرية عرائس.png" alt="عطور فانو خاصة"
+            style="width: 75px; height: 65px; border-radius: 7px;">
+        <p style="margin: 0; font-size: 26px; font-weight: bold; color: white;">مخمريات العرائس</p>
+        </button>
+        <!---->
+        <button class="product" onclick="openProductPage('Oud Mukhammariyat')" style="
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #b8860b;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        padding: 10px;
+        width: 350px;
+        height: 90px;
+        box-sizing: border-box;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        overflow: hidden;
+        margin: 10px auto; /* علشان يبقى في النص */
+    ">
+        <img src="مخمرية_فانو.png" alt="عطور فانو خاصة"
+            style="width: 75px; height: 65px; border-radius: 7px;">
+        <p style="margin: 0; font-size: 26px; font-weight: bold; color: white;">مخمريات من  فانو</p>
+        </button>
+    </div>
+
+
+    
+
+
+    <!---->
+
+    <div class="footer">
+        <span>من نحن<br> 
+          فانو للعطور براند مخصص لإنتاج العطور الشرقية والغربية بجودة فائقة <br>| معلومات التواصل</span><br>
+        <a href="https://www.facebook.com/amr77wahed/" target="_blank">فيسبوك</a> |
+        <a href="https://wa.me/+201065043283" target="_blank">واتساب</a> |
+        <a href="https://t.me/YOUR_TELEGRAM" target="_blank">تيليجرام (خاص بالجملة)</a><br>
+        <span>جميع الحقوق محفوظة &copy; 2025</span>
+    </div>
+
+
+  <!-- ربط ملف JavaScript خارجي -->
+
+  <script src="index.js"></script>
+
+  
+</body>
+  
+
+</html>

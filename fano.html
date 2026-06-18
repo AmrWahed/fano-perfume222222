@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عطور شرقية</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 150px;
+      background-color: #333;
+      color: white;
+      z-index: 1000;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .header-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .header-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 42px;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    main {
+      padding-top: 170px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .products-section {
+      width: 100%;
+      max-width: 1200px;
+      padding: 30px 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-image {
+      width: 175px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+
+    .product-button {
+      background-color: #d87a0e;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-button:hover {
+      background-color: #b66a09;
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+      background-color: #f1c40f;
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 230px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -115px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      z-index: 1100;
+    }
+
+    .back-button:hover {
+      background-color: #388e3c;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="head(o).png" alt="عطور شرقية" class="header-image" />
+    <div class="header-text">هنا ستجد جميع العطور الشرقية الفاخرة</div>
+  </header>
+
+  <a href="index.html" class="back-button">رجوع</a>
+
+  <main>
+
+    <!-- القسم الأول -->
+    <div class="products-section">
+      <!-- كرر هذا القالب لكل منتج -->
+      <div class="product-card">
+        <img src="prudact/حرمين.png" alt="عطور شرقية" class="product-image">
+      
+        <p onclick="oudharmaing('oudharmaing')" class="product-name">عود حرمين</p>
+        <button class="product-button" onclick="location.href='order.html?product=عود%20حرمين'">اطلب الان</button>
+
+        <div class="tooltip">
+           ! مرر لاظهار المعلومات
+            <div class="tooltiptext">
+                عود حرمين : عطر شرقي فخم و برائحة مستوحي من الطراز  العنبري و الخشيي 
+                حجم 40مللي:250ج
+                حجم 50مللي:300ج
+                حجم 80مللي:450ج
+                حجم 100مللي:500ج
+
+
+            </div>
+          </div>
+    </div>
+
+    <div class="product-card">
+        <img src="prudact/مضاوي.png" alt="عطور فرنسية" class="product-image">
+
+
+
+        <p onclick="oudharmaing('oudharmaing')" class="product-name" >مضاوي</p>
+        
+        <button class="product-button" onclick="location.href='order.html?product= مضاوي' ">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                
+                 مضاوي :عطر شرقي دافئ ممزوج بالعود و الفانليا  مع لمسة عنبر الأكثر مبيعا في العود 
+                 حجم 40مللي:300ج
+                 حجم 50مللي:350ج
+                 حجم 80مللي:550ج
+                 حجم 100مللي:620ج
+
+
+             </div>
+           </div>
+    </div>
+
+   
+
+    <div class="product-card">
+        <img src="prudact/عود بوكية.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">عود بوكية</p>
+        <button class="product-button" onclick="location.href='order.html?product=عود%20بوكية'">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                عود بوكية:عطر شرقي فاخر يعتمد على العود النقي ممزوجًا بروائح الأزهار والتوابل لإضفاء لمسة فاخرة وأنيقة
+                
+                حجم 40مللي:250ج
+                 حجم 50مللي:300ج
+                 حجم 80مللي:450ج
+                 حجم 100مللي:500ج
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="prudact/عود ابيض.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">عود ابيض</p>
+        <button class="product-button" onclick="location.href='order.html?product=عود ابيض '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                عود أبيض عطر شرقي ناعم يجمع بين العود الأبيض والمسك الابيض و الورد و مع لمسة الفانيليا الخفيفة ليمنح رائحة دافئة وأنيقة.
+                حجم 40مللي:300ج
+                 حجم 50مللي:350ج
+                 حجم 80مللي:550ج
+                 حجم 100مللي:620ج
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="prudact/كلمات.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">مسك كلمات</p>
+        <button class="product-button" onclick="location.href='order.html?product=مسك كلمات '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                مسك كلمات: عطر مسكي شرقي مع لمسة سكره  من شركة العربية للعود و فخم جدا للمناسبات الرسمية 
+                حجم 40مللي:300ج
+                 حجم 50مللي:350ج
+                 حجم 80مللي:550ج
+                 حجم 100مللي:620ج
+
+
+             </div>
+           </div>
+    </div>
+    <div class="product-card">
+        <img src="prudact/احساس.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">احساس خاص</p>
+        <button class="product-button" onclick="location.href='order.html?product=احساس خاص '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                احساس خاص:عطر فريد من نوعة يجمع بين الفانليا و القرفة صدر عام 2022 
+                حجم 40مللي:300ج
+                 حجم 50مللي:350ج
+                 حجم 80مللي:550ج
+                 حجم 100مللي:620ج
+
+
+             </div>
+           </div>
+    </div>
+
+
+
+
+    <div class="product-card">
+      <img src="prudact/خمرة.png" alt="عطور شرقية" class="product-image">
+      <p class="product-name">خيمرة</p>
+      <button class="product-button" onclick="location.href='order.html?product=خيمرة '">اطلب الان </button>
+      <div class="tooltip">
+          ! مرر لاظهار المعلومات
+           <div class="tooltiptext">
+           خيمرة  عطر خليجي مسكر لانه اشهر مكوناته من القرفة و حلوي اللوز و تمر 
+
+           حجم 40مللي:300ج
+           حجم 50مللي:350ج
+           حجم 80مللي:550ج
+           حجم 100مللي:620ج
+
+
+           </div>
+         </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="product-card">
+        <img src="prudact/خمرة قهوة.png" alt="عطور فرنسية" class="product-image">
+        <p class="product-name">خيمرة قهوة</p>
+        <button class="product-button" onclick="location.href='order.html?product=خيمرة قهوة '">اطلب الان </button>
+
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                خيمرة قهوة: عطر خليجي مسكر مع لمسة القهوة الفاخرة
+                 حجم 40مللي:250ج
+                 حجم 50مللي:300ج
+                 حجم 80مللي:450ج
+                 حجم 100مللي:500ج
+
+
+             </div>
+           </div>
+
+    </div>
+
+    <div class="product-card">
+        <img src="prudact/اسد.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">أسد</p>
+        <button class="product-button" onclick="location.href='order.html?product=أسد '">اطلب الان </button>
+
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                أسد: عطر شرقي دافئ بنفحات العنبر والفانيليا تم اصداره 2024
+                حجم 40مللي:300ج
+                 حجم 50مللي:350ج
+                 حجم 80مللي:550ج
+                 حجم 100مللي:620ج
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="prudact/الوسام.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">عود الوسام</p>
+        <button class="product-button" onclick="location.href='order.html?product=عود الوسام '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                عود الوسام:عطر شرقي خشبي يتميز بمزيج من العود والمسك مع لمسات من الزهور ليمنح رائحة فريدة وأنيقة
+                حجم 40مللي:250ج
+                 حجم 50مللي:300ج
+                 حجم 80مللي:450ج
+                 حجم 100مللي:500ج
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="prudact/وصال.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">مسك وصال</p>
+        <button class="product-button" onclick="location.href='order.html?product=مسك وصال '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                مسك وصال: عطر مسكي ناعم يجمع بين المسك الأبيض والروائح الزهرية ليضفي لمسة أنيقة وراقية.
+                حجم 40مللي:250ج
+                 حجم 50مللي:300ج
+                 حجم 80مللي:450ج
+                 حجم 100مللي:500ج
+
+
+             </div>
+           </div>
+    </div>
+    <div class="product-card">
+        <img src="prudact/شي عود.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">شي عود</p>
+        <button class="product-button" onclick="location.href='order.html?product=شي عود '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                شي عود :عطر شرقي خشبي يتميز بمزيج من العود والمكونات الدافئة ليمنح إحساسًا بالغموض والجاذبية.
+                 حجم 40مللي:250ج
+                 حجم 50مللي:300ج
+                 حجم 80مللي:450ج
+                 حجم 100مللي:500ج
+
+
+             </div>
+           </div>
+    </div>
+
+
+
+
+
+   <!--  row 1  كروت المنتجات -->
+
+
+    <div class="product-card">
+        <img src="prudact/سلطان العطور.png" alt="عطور شرقية" class="product-image">
+        <p class="product-name">سلطان العطور</p>
+        <button class="product-button" onclick="location.href='order.html?product=سلطان العطور '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                 سلطان العطور: عطر فاخر يتميز بمزيج مكثف من العود 
+                 والعنبر والتوابل ليعطي حضورًا قويًا ومميزًا.
+                 حجم 40مللي:300ج
+                 حجم 50مللي:350ج
+                 حجم 80مللي:550ج
+                 حجم 100مللي:620ج
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="prudact/شموخ.png" alt="عطور فرنسية" class="product-image">
+        <p class="product-name">شموخ</p>
+        <button class="product-button" onclick="location.href='order.html?product=شموخ '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                شموخ:عطر عربي فخم يجمع بين العود والمسك والعنبر ليعكس الفخامة و الطابع الشرقي
+                حجم 40مللي:400ج
+                 حجم 50مللي:500ج
+                 حجم 80مللي:800ج
+                 حجم 100مللي:1000ج
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="prudact/قصة.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">قصة امباريال فالي</p>
+        <button class="product-button" onclick="location.href='order.html?product=قصة امباريال فالي '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                امباريال فالي:من دار قصة عطر فاخر يمزج بين الأزهار والمكونات الشرقية ليمنح رائحة ملكية غنية
+                 حجم 40مللي:250ج
+                 حجم 50مللي:300ج
+                 حجم 80مللي:450ج
+                 حجم 100مللي:500ج
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="prudact/امير الصحراء.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">أمير الصحراء</p>
+        <button class="product-button" onclick="location.href='order.html?product=أمير الصحراء '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                أمير الصحراء: من الرحاب عطر شرقي عربي يجمع بين العود والعنبر والتوابل ليعكس الفخامة والأصالة.
+                حجم 40مللي:300ج
+                 حجم 50مللي:350ج
+                 حجم 80مللي:550ج
+                 حجم 100مللي:620ج
+
+
+             </div>
+           </div>
+    </div>
+
+    <div class="product-card">
+        <img src="prudact/الف ليلة.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">عود ألف ليلة و ليلة</p>
+        <button class="product-button" onclick="location.href='order.html?product=عود الف ليلة و ليلة '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                عود ألف ليلة وليلة:عطر شرقي ملكي برائحة العود الممزوجة بالتوابل و المسك ليعكس الفخامة والتراث العربي
+                حجم 40مللي:400ج
+                 حجم 50مللي:500ج
+                 حجم 80مللي:800ج
+                 حجم 100مللي:1000ج
+
+
+             </div>
+           </div>
+    </div>
+    <div class="product-card">
+        <img src="prudact/بلاك عود.png" alt="عطور نيش" class="product-image">
+        <p class="product-name">بلاك عود</p>
+        <button class="product-button" onclick="location.href='order.html?product=بلاك عود '">اطلب الان </button>
+        <div class="tooltip">
+            ! مرر لاظهار المعلومات
+             <div class="tooltiptext">
+                مونتال عود بلاك:عطر قوي ومكثف يجمع بين العود الداكن والنوتات الجلدية ليمنح طابعًا فخمًا وغامضًا
+                حجم 40مللي:250ج
+                 حجم 50مللي:300ج
+                 حجم 80مللي:450ج
+                 حجم 100مللي:500ج
+
+
+             </div>
+           </div>
+    </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
+
+
+<script>
+  //o دالة للتنقل إلى صفحة العطور الشرقية
+  function order() {
+  window.location.href = "order.html";
+  }
+  
+  </script>

@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عطور شرقية</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 150px;
+      background-color: #333;
+      color: white;
+      z-index: 1000;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .header-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .header-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 42px;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    main {
+      padding-top: 170px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .products-section {
+      width: 100%;
+      max-width: 1200px;
+      padding: 30px 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-image {
+      width: 175px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+
+    .product-button {
+      background-color: #d87a0e;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-button:hover {
+      background-color: #b66a09;
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+      background-color: #f1c40f;
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 230px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -115px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #4caf50;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      z-index: 1100;
+    }
+
+    .back-button:hover {
+      background-color: #388e3c;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="head(o).png" alt="عطور شرقية" class="header-image" />
+    <div class="header-text">هنا ستجد جميع العطور الفرنسية الفاخرة</div>
+  </header>
+
+  <a href="index.html" class="back-button">رجوع</a>
+
+  <main>
+
+    <!-- القسم الأول -->
+    <div class="products-section">
+      <!-- كرر هذا القالب لكل منتج -->
+      <div class="product-card">
+        <img src="سوفاج الكسير.png" alt="عطور شرقية" class="product-image">
+      
+        <p onclick="oudharmaing('oudharmaing')" class="product-name">سوفاج الكسير</p>
+        <button class="product-button" onclick="location.href='order.html?product=سوفاج الكسير'">اطلب الان</button>
+
+        <div class="tooltip">
+           ! مرر لاظهار المعلومات
+            <div class="tooltiptext">
+               
+                سوفاج الكسير: عطر قوي يجمع بين التوابل و الخشب، تم إصداره عام 2021    
+                حجم 40مللي:300ج
+                حجم 50مللي:350ج
+                حجم 80مللي:600ج
+                حجم 100مللي:700ج
+  
+
+
+            </div>
+          </div>
+    </div>
+
+    <div class="product-card">
+      <img src="سوفاج.png" alt="عطور شرقية" class="product-image">
+    
+      <p onclick="oudharmaing('oudharmaing')" class="product-name"> سوفاج</p>
+      <button class="product-button" onclick="location.href='order.html?product=سوفاج'">اطلب الان</button>
+
+      <div class="tooltip">
+         ! مرر لاظهار المعلومات
+          <div class="tooltiptext">
+
+
+            سوفاج: عطر رجالي منعش من ديور، تم إصداره عام 2015
+            حجم 40مللي:185ج
+              حجم 50مللي:225ج
+              حجم 80مللي:350ج
+              حجم 100مللي:400ج
+
+          </div>
+        </div>
+  </div>
+
+   
+  <div class="product-card">
+      <img src="هوم انتنس.png" alt="عطور شرقية" class="product-image">
+  
+    <p onclick="oudharmaing('oudharmaing')" class="product-name"> ديور هوم انتنس</p>
+    <button class="product-button" onclick="location.href='order.html?product= ديور هوم انتنس'">اطلب الان</button>
+
+    <div class="tooltip">
+       ! مرر لاظهار المعلومات
+        <div class="tooltiptext">
+
+          ديور هوم إنتنس :عطر زهري خشبي راقيٍ يجمع بين السوسن والاخشاب، تم إصداره عام 2011
+          حجم 40مللي:250ج
+          حجم 50مللي:300ج
+          حجم 80مللي:450ج
+          حجم 100مللي:500ج
+  
+
+        </div>
+      </div>
+</div>
+
+
+<div class="product-card">
+      <img src="فهرنهيت.png" alt="عطور شرقية" class="product-image">
+
+  <p onclick="oudharmaing('oudharmaing')" class="product-name"> فهرنهيت</p>
+  <button class="product-button" onclick="location.href='order.html?product=فهرنهيت'">اطلب الان</button>
+
+  <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+
+        فهرنهايت: عطر جلدي من طراز القديم تم اصداره عام 1988
+          حجم 40مللي:185ج
+          حجم 50مللي:225ج
+          حجم 80مللي:350ج
+          حجم 100مللي:400ج
+
+      </div>
+    </div>
+</div>
+
+<div class="product-card">
+  <img src="استرونج.png" alt="عطور شرقية" class="product-image">
+
+<p onclick="oudharmaing('oudharmaing')" class="product-name"> استرونج ويذ يو</p>
+<button class="product-button" onclick="location.href='order.html?product= استرونج ويذ يو'">اطلب الان</button>
+
+<div class="tooltip">
+   ! مرر لاظهار المعلومات
+    <div class="tooltiptext">
+
+      استرونج ويز يو: عطر أروماتك دافئ بنفحات الفانيليا والتوابل، تم إصداره عام 2017.
+        حجم 40مللي:185ج
+        حجم 50مللي:225ج
+        حجم 80مللي:350ج
+        حجم 100مللي:400ج
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="product-card">
+  <img src="انتنسلي.png" alt="عطور شرقية" class="product-image">
+
+  <p onclick="oudharmaing('oudharmaing')" class="product-name"> استرونج ويذ يو انتنسلي</p>
+  <button class="product-button" onclick="location.href='order.html?product= استرونج ويذ يو انتنسلي'">اطلب الان</button>
+
+  <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+
+        استرونج انتنسلي:عطر مسكر و عنبري يجمع بين الفانيليا والعنبر والخشب، تم إصداره عام 2019
+        حجم 40مللي:250ج
+        حجم 50مللي:300ج
+        حجم 80مللي:450ج
+        حجم 100مللي:500ج
+
+
+
+      </div>
+    </div>
+</div>
+
+<div class="product-card">
+  <img src="ابسليوت.png" alt="عطور شرقية" class="product-image">
+
+<p onclick="oudharmaing('oudharmaing')" class="product-name"> استرونج ويذ يو ابسليوت</p>
+<button class="product-button" onclick="location.href='order.html?product= استرونج ويذ يو ابسليوت'">اطلب الان</button>
+
+<div class="tooltip">
+   ! مرر لاظهار المعلومات
+    <div class="tooltiptext">
+
+      استرونج ابسليوت :عطر مسكر و يشبه لأنتنسلي لكنه اعمق يجمع بين الفانيليا و الروم والخشب، تم إصداره عام 2021
+      حجم 40مللي:250ج
+      حجم 50مللي:300ج
+      حجم 80مللي:450ج
+      حجم 100مللي:500ج
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<div class="product-card">
+  <img src="استرونج توباكو.png" alt="عطور شرقية" class="product-image">
+
+<p onclick="oudharmaing('oudharmaing')" class="product-name"> استرونج ويذ يو توباكو</p>
+<button class="product-button" onclick="location.href='order.html?product= استرونج ويذ يو توباكو'">اطلب الان</button>
+
+<div class="tooltip">
+ ! مرر لاظهار المعلومات
+  <div class="tooltiptext">
+
+    استرونج توباكو:عطر شرقي و خشبي فريد  من نوعه يجمع بين الفانيليا و التبغ والخشب، تم إصداره عام 2024 
+    حجم 40مللي:250ج
+    حجم 50مللي:300ج
+    حجم 80مللي:450ج
+    حجم 100مللي:500ج
+
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+<!-- اخرك هنا-->
+
+<div class="product-card">
+  <img src="بي ام.png" alt="عطور شرقية" class="product-image">
+
+  <p onclick="oudharmaing('oudharmaing')" class="product-name"> Bmw</p>
+      <button class="product-button" onclick="location.href='order.html?product=Bmw'">اطلب الان</button>
+
+  <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+        بي أم : من بي ام عطر منعش و مناسب لفصل الصيف و له شعبية كبيرة  
+                  حجم 40مللي:185ج
+          حجم 50مللي:225ج
+          حجم 80مللي:350ج
+          حجم 100مللي:400ج
+
+
+      </div>
+    </div>
+</div>
+
+<div class="product-card">
+<img src="اكوا.png" alt="عطور شرقية" class="product-image">
+
+<p onclick="oudharmaing('oudharmaing')" class="product-name"> اكوا دي جو</p>
+      <button class="product-button" onclick="location.href='order.html?product= اكوا دي جو '">اطلب الان</button>
+
+<div class="tooltip">
+   ! مرر لاظهار المعلومات
+    <div class="tooltiptext">
+
+      اكوا دي جو:هو عطر صيفي منعش و الأكثر مبيعا في فصل الصيف تم اصداره  2012
+              حجم 40مللي:185ج
+        حجم 50مللي:225ج
+        حجم 80مللي:350ج
+        حجم 100مللي:400ج
+
+
+    </div>
+  </div>
+</div>
+
+
+<div class="product-card">
+<img src="اكوا برفوم.png" alt="عطور شرقية" class="product-image">
+
+<p onclick="oudharmaing('oudharmaing')" class="product-name"> اكوا دي جو برفوم</p>
+      <button class="product-button" onclick="location.href='order.html?product= اكوا دي جو برفوم'">اطلب الان</button>
+
+<div class="tooltip">
+ ! مرر لاظهار المعلومات
+  <div class="tooltiptext">
+
+    اكوا دي جو برفوم:عطر رجالي منعش و أنيق بمزيق بحري , مثالي لفصل الصيف  و المناسبات الرسمية و تم اصداره 2015 
+    حجم 40مللي:250ج
+    حجم 50مللي:300ج
+    حجم 80مللي:450ج
+    حجم 100مللي:500ج
+
+
+
+  </div>
+</div>
+</div>
+
+
+<div class="product-card">
+  <img src="ارماني كود.png" alt="عطور شرقية" class="product-image">
+  
+  <p onclick="oudharmaing('oudharmaing')" class="product-name"> ارماني كود</p>
+      <button class="product-button" onclick="location.href='order.html?product= ارماني كود'">اطلب الان</button>
+  
+  <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+        ارماني كود: من ارماني عطر خشبي و منعش و مناسب لسهرات و المناسبات الرسمية  تم اصداره عام 2004
+                  حجم 40مللي:185ج
+          حجم 50مللي:225ج
+          حجم 80مللي:350ج
+          حجم 100مللي:400ج
+  
+  
+      </div>
+    </div>
+  </div>
+
+<div class="product-card">
+  <img src="جيمي شو.png" alt="عطور شرقية" class="product-image">
+
+  <p onclick="oudharmaing('oudharmaing')" class="product-name"> جيمي شو</p>
+      <button class="product-button" onclick="location.href='order.html?product= جيمي شو'">اطلب الان</button>
+
+  <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+        جيمي تشو: عطر أنيق وجذاب يعكس الفخامة العصرية، ويجمع بين الانتعاش والقوة ليمنح الرجل حضورًا راقيًا ومميزًا.
+                  حجم 40مللي:185ج
+          حجم 50مللي:225ج
+          حجم 80مللي:350ج
+          حجم 100مللي:400ج
+
+
+
+      </div>
+    </div>
+</div>
+
+
+
+
+<div class="product-card">
+<img src="لاكوست وايت.png" alt="عطور شرقية" class="product-image">
+
+<p onclick="oudharmaing('oudharmaing')" class="product-name"> لاكوست وايت</p>
+      <button class="product-button" onclick="location.href='order.html?product=لاكوست وايت'">اطلب الان</button>
+
+<div class="tooltip">
+ ! مرر لاظهار المعلومات
+  <div class="tooltiptext">
+
+    لاكوست وايت: هو عطر فاخر من ماركة لاكوست، يتميز برائحته المنعشة والخفيفة التي تجمع بين الحمضيات والمسك، تم إصداره في عام 2011.
+    حجم 40مللي:185ج
+    حجم 50مللي:225ج
+    حجم 80مللي:350ج
+    حجم 100مللي:400ج
+
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+  <div class="product-card">
+    <img src="لاكوست بلاك.png" alt="عطور شرقية" class="product-image">
+    
+    <p onclick="oudharmaing('oudharmaing')" class="product-name"> لاكوست بلاك</p>
+      <button class="product-button" onclick="location.href='order.html?product=لاكوست بلاك'">اطلب الان</button>
+    
+    <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+  
+        لاكوست بلاك: عطر شرقي خشبي منعش يجمع بين التوابل والأعشاب والحمضيات، تم إصداره في عام 2005.
+          حجم 40مللي:185ج
+          حجم 50مللي:225ج
+          حجم 80مللي:350ج
+          حجم 100مللي:400ج
+  
+    
+    
+      </div>
+    </div>
+    </div>
+
+    <div class="product-card">
+  <img src="لاكوست اسنشيال.png" alt="عطور شرقية" class="product-image">
+  
+  <p onclick="oudharmaing('oudharmaing')" class="product-name">لاكوست اسنشيال</p>
+      <button class="product-button" onclick="location.href='order.html?product=لاكوست اسنشيال'">اطلب الان</button>
+  
+  <div class="tooltip">
+   ! مرر لاظهار المعلومات
+    <div class="tooltiptext">
+
+      لاكوست اسنشيال: عطر منعش وخفيف يحتوي على مزيج من الحمضيات والخشب مع لمسات من الفلفل والمسك، تم إصداره في عام 2005.
+              حجم 40مللي:185ج
+        حجم 50مللي:225ج
+        حجم 80مللي:350ج
+        حجم 100مللي:400ج
+
+  
+  
+    </div>
+  </div>
+  </div>
+
+
+  <div class="product-card">
+    <img src="لاكوست ريد.png" alt="عطور شرقية" class="product-image">
+    
+    <p onclick="oudharmaing('oudharmaing')" class="product-name">لاكوست ريد</p>
+      <button class="product-button" onclick="location.href='order.html?product=لاكوست ريد'">اطلب الان</button>
+    
+    <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+        لاكوست ريد: عطر حيوي ومنعش برائحة الفواكه الحمضية مع لمسات من التوابل والمسك، تم إصداره في عام 2004.
+          حجم 40مللي:185ج
+          حجم 50مللي:225ج
+          حجم 80مللي:350ج
+          حجم 100مللي:400ج
+  
+    
+    
+      </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="product-card">
+      <img src="لومال لوفير.jpg" alt="عطور شرقية" class="product-image">
+      <p onclick="oudharmaing('oudharmaing')" class="product-name"> لومال لوفير</p>
+      <button class="product-button" onclick="location.href='order.html?product= لومال لوفير'">اطلب الان</button>
+      <div class="tooltip">
+       ! مرر لاظهار المعلومات
+        <div class="tooltiptext">
+لومال لوفير: عطر رجالي فاخر حيوي  دافئ له طابع   كثيف و عنبري من جان بول، تم إصداره عام2023
+            حجم 40مللي:185ج
+            حجم 50مللي:225ج
+            حجم 80مللي:350ج
+            حجم 100مللي:400ج
+        </div>
+      </div>
+      </div>
+
+
+
+
+      <div class="product-card">
+        <img src="لومال الكسير.png" alt="عطور شرقية" class="product-image">
+        
+        <p onclick="oudharmaing('oudharmaing')" class="product-name"> لومال الكسير</p>
+      <button class="product-button" onclick="location.href='order.html?product=لومال الكسير'">اطلب الان</button>
+        
+        <div class="tooltip">
+         ! مرر لاظهار المعلومات
+          <div class="tooltiptext">
+      
+  لومال الكسير: عطر رجالي فاخر حيوي  دافئ له طابع   كثيف و عنبري من جان بول، تم إصداره عام 2023
+              حجم 40مللي:250ج
+              حجم 50مللي:300ج
+              حجم 80مللي:400ج
+              حجم 100مللي:500ج
+      
+        
+        
+          </div>
+        </div>
+        </div>
+
+        <div class="product-card">
+          <img src="375x500.30947.png" alt="عطور شرقية" class="product-image">
+          
+          <p onclick="oudharmaing('oudharmaing')" class="product-name"> التراميل </p>
+      <button class="product-button" onclick="location.href='order.html?product= التراميل '">اطلب الان</button>
+          
+          <div class="tooltip">
+           ! مرر لاظهار المعلومات
+            <div class="tooltiptext">
+        
+
+              التراميل : عطر مسكر يجمع بين الفانليا و العنبر مع لمسة نعناع مما يعطيه انتعاش 
+              حجم 40مللي:185ج
+                حجم 50مللي:225ج
+                حجم 80مللي:350ج
+                حجم 100مللي:400ج
+        
+          
+          
+            </div>
+          </div>
+          </div>
+
+          <div class="product-card">
+            <img src="اسكاندال.png" alt="عطور شرقية" class="product-image">
+            <p onclick="oudharmaing('oudharmaing')" class="product-name">اسكاندال</p>
+      <button class="product-button" onclick="location.href='order.html?product=اسكاندل'">اطلب الان</button>
+            <div class="tooltip">
+             ! مرر لاظهار المعلومات
+              <div class="tooltiptext">
+
+
+                اسكاندل – العطر الأصلي من السلسلة، يجمع بين الحلاوة والدفء مع لمسات مسكية أنيقة.
+                
+                حجم 40مللي:185ج
+                  حجم 50مللي:225ج
+                  حجم 80مللي:350ج
+                  حجم 100مللي:400ج
+              </div>
+            </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="product-card">
+              <img src="باد بوي.png" alt="عطور شرقية" class="product-image">
+              <p onclick="oudharmaing('oudharmaing')" class="product-name">باد بوي</p>
+      <button class="product-button" onclick="location.href='order.html?product=باد بوي'">اطلب الان</button>
+              <div class="tooltip">
+               ! مرر لاظهار المعلومات
+                <div class="tooltiptext">
+  
+  
+باد بوي: شرقي حار مع لمسة مسكرة  بفوحان قوي، جذاب للسهرات
+
+                  
+                  حجم 40مللي:185ج
+                    حجم 50مللي:225ج
+                    حجم 80مللي:350ج
+                    حجم 100مللي:400ج
+                </div>
+              </div>
+              </div>
+
+              <div class="product-card">
+                <img src="في اي بي.png" alt="عطور شرقية" class="product-image">
+                <p onclick="oudharmaing('oudharmaing')" class="product-name">212 vip</p>
+      <button class="product-button" onclick="location.href='order.html?product=212 vip'">اطلب الان</button>
+                <div class="tooltip">
+                 ! مرر لاظهار المعلومات
+                  <div class="tooltiptext">
+    
+    
+                    
+في أي بي: شرقي فاكهي بفوحان قوي جدًا، فخم للحفلات
+
+                    
+                    حجم 40مللي:185ج
+                      حجم 50مللي:225ج
+                      حجم 80مللي:350ج
+                      حجم 100مللي:400ج
+                  </div>
+                </div>
+                </div>
+                  
+                <div class="product-card">
+                  <img src="في اي بي بلاك.png" alt="عطور شرقية" class="product-image">
+                  <p onclick="oudharmaing('oudharmaing')" class="product-name">212 black</p>
+      <button class="product-button" onclick="location.href='order.html?product=212 black'">اطلب الان</button>
+                  <div class="tooltip">
+                   ! مرر لاظهار المعلومات
+                    <div class="tooltiptext">
+      
+      
+
+                      في اي بي بلاك :خشبي تابلي منعش بفوحان متوسط، أنيق وهادئ للاستخدام اليومي.                      
+                      حجم 40مللي:185ج
+                        حجم 50مللي:225ج
+                        حجم 80مللي:350ج
+                        حجم 100مللي:400ج
+                    </div>
+                  </div>
+                  </div>
+      
+                  <div class="product-card">
+                    <img src="سيكسي.png" alt="عطور شرقية" class="product-image">
+                    <p onclick="oudharmaing('oudharmaing')" class="product-name">212 sexy</p>
+      <button class="product-button" onclick="location.href='order.html?product=212 sexy'">اطلب الان</button>
+                    <div class="tooltip">
+                     ! مرر لاظهار المعلومات
+                      <div class="tooltiptext">
+        
+        
+
+                        212 sexy : عطر خشبي حار بفوحان متوسط إلى قوي، مناسب للسهرات الشبابية.
+                        
+                        حجم 40مللي:185ج
+                          حجم 50مللي:225ج
+                          حجم 80مللي:350ج
+                          حجم 100مللي:400ج
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="product-card">
+                      <img src="اسبيس بوم اكستريم.png" alt="عطور شرقية" class="product-image">
+                      <p onclick="oudharmaing('oudharmaing')" class="product-name">اسبيس بوم اكستريم </p>
+      <button class="product-button" onclick="location.href='order.html?product=اسبيس بوم اكستريم '">اطلب الان</button>
+                      <div class="tooltip">
+                       ! مرر لاظهار المعلومات
+                        <div class="tooltiptext">
+          
+          
+                          إسبيس بوم إكستريم: شرقي تابلي بفوحان قوي جدًا، عطر ليلي حسي ومثير، يناسب السهرات والمناسبات الفاخرة.                          
+                            حجم 40مللي:250ج
+                            حجم 50مللي:325ج
+                            حجم 80مللي:450ج
+                            حجم 100مللي:600ج
+                        </div>
+                      </div>
+                      </div>
+                              
+                      <div class="product-card">
+                        <img src="اسبيس بي نايت.png" alt="عطور شرقية" class="product-image">
+   <p onclick="oudharmaing('oudharmaing')" class="product-name">اسبيس بوم نايت</p>
+      <button class="product-button" onclick="location.href='order.html?product=اسبيس بوم نايت'">اطلب الان</button>
+   <div class="tooltip">
+    ! مرر لاظهار المعلومات
+     <div class="tooltiptext">
+   
+   
+
+      اسبيس بوم نايت: شرقي خشبي بفوحان متوسط، رائحة دافئة وعميقة بلمسات فاكهية وخشبية تجعله جذابًا وساحرًا.
+             حجم 40مللي:185ج
+         حجم 50مللي:225ج
+         حجم 80مللي:350ج
+         حجم 100مللي:400ج
+     </div>
+   </div>
+   </div>
+
+  
+   <div class="product-card">
+     <img src="دنهل فريش.png" alt="عطور شرقية" class="product-image">
+     <p onclick="oudharmaing('oudharmaing')" class="product-name">دنهل فريش</p>
+      <button class="product-button" onclick="location.href='order.html?product=دنهل فريش '">اطلب الان</button>
+     <div class="tooltip">
+      ! مرر لاظهار المعلومات
+       <div class="tooltiptext">
+   
+   
+
+        دنهل فريش: حمضي منعش بفوحان خفيف إلى متوسط، مثالي للصيف.         
+       حجم 40مللي:185ج
+         حجم 50مللي:225ج
+         حجم 80مللي:350ج
+         حجم 100مللي:400ج
+     </div>
+   </div>
+   </div>
+   
+
+
+
+
+
+
+   <div class="product-card">
+     <img src="دنهل ريد.png" alt="عطور شرقية" class="product-image">
+     <p onclick="oudharmaing('oudharmaing')" class="product-name">دنهل ريد</p>
+      <button class="product-button" onclick="location.href='order.html?product=دنهل ريد'">اطلب الان</button>
+     <div class="tooltip">
+      ! مرر لاظهار المعلومات
+       <div class="tooltiptext">
+   
+   
+
+        دنهل ريد: خشبي حار بفوحان متوسط، أنيق لفصل الشتاء و يفضل في المساء.         
+         حجم 40مللي:185ج
+           حجم 50مللي:225ج
+           حجم 80مللي:350ج
+           حجم 100مللي:400ج
+       </div>
+     </div>
+     </div>   
+     <div class="product-card">
+       <img src="دنهل بلو.png" alt="عطور شرقية" class="product-image">
+       <p onclick="oudharmaing('oudharmaing')" class="product-name">دنهل بلو</p>
+      <button class="product-button" onclick="location.href='order.html?product=دنهل بلو'">اطلب الان</button>
+       <div class="tooltip">
+        ! مرر لاظهار المعلومات
+         <div class="tooltiptext">
+                  
+                  
+
+          دنهل بلو: أروماتك مائي بفوحان خفيف إلى متوسط، منعش للصيف.
+      
+      حجم 40مللي:185ج
+        حجم 50مللي:225ج
+        حجم 80مللي:350ج
+        حجم 100مللي:400ج
+    </div>
+  </div>
+  </div>  
+
+
+
+  <div class="product-card">
+    <img src="دنهل برسويت.png" alt="عطور شرقية" class="product-image">
+    <p onclick="oudharmaing('oudharmaing')" class="product-name">دنهل برسويت</p>
+      <button class="product-button" onclick="location.href='order.html?product=دنهل برسويت'">اطلب الان</button>
+    <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+  
+  
+
+        دنهل برسويت: شرقي خشبي قوي و عنيف  بفوحان متوسط إلى قوي، أنيق ورسمي.
+        
+          حجم 40مللي:185ج
+          حجم 50مللي:225ج
+          حجم 80مللي:350ج
+          حجم 100مللي:400ج
+      </div>
+    </div>
+    </div>  
+
+
+
+
+
+
+
+
+
+<div class="product-card">
+  <img src="بلجاري اكوا.png" alt="عطور شرقية" class="product-image">
+
+  <p onclick="oudharmaing('oudharmaing')" class="product-name"> بلجاري اكوا</p>
+      <button class="product-button" onclick="location.href='order.html?product=بلجاري اكوا'">اطلب الان</button>
+
+  <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+
+
+
+        بلغاري أكوا :أروماتك مائي بفوحان متوسط، يحتوي على نوتات بحرية عميقة تعكس انتعاش المحيط، مثالي للصيف.
+          حجم 40مللي:185ج
+          حجم 50مللي:225ج
+          حجم 80مللي:350ج
+          حجم 100مللي:400ج
+
+      </div>
+    </div>
+</div>
+
+<div class="product-card">
+<img src="بلجاري بلاك.png" alt="عطور شرقية" class="product-image">
+
+<p onclick="oudharmaing('oudharmaing')" class="product-name"> بلجاري مان</p>
+      <button class="product-button" onclick="location.href='order.html?product= بلجاري مان'">اطلب الان</button>
+
+<div class="tooltip">
+   ! مرر لاظهار المعلومات
+    <div class="tooltiptext">
+
+
+      بلجاري مان: خشبي شرقي بفوحان متوسط، يتميز بالأناقة والرقي، مناسب للأجواء الرسمية والعملية.
+        حجم 40مللي:185ج
+        حجم 50مللي:225ج
+        حجم 80مللي:350ج
+        حجم 100مللي:400ج
+
+
+    </div>
+  </div>
+</div>
+
+
+<div class="product-card">
+<img src="واي.png" alt="عطور شرقية" class="product-image">
+
+<p onclick="oudharmaing('oudharmaing')" class="product-name"> واي</p>
+      <button class="product-button" onclick="location.href='order.html?product= واي'">اطلب الان</button>
+
+<div class="tooltip">
+ ! مرر لاظهار المعلومات
+  <div class="tooltiptext">
+
+
+    واي :من أيف سان لوران عطر عصري يجمع بين الانتعاش والعمق حيث يمتزج البرغموت مع نوتات خشبية تعكس الجرأة والثقة
+        حجم 40مللي:250ج
+    حجم 50مللي:300ج
+    حجم 80مللي:450ج
+    حجم 100مللي:500ج
+
+
+
+  </div>
+</div>
+</div>
+
+
+<div class="product-card">
+  <img src="فوياج.png" alt="عطور شرقية" class="product-image">
+  
+  <p onclick="oudharmaing('oudharmaing')" class="product-name">فوياج</p>
+      <button class="product-button" onclick="location.href='order.html?product=فوياج'">اطلب الان</button>
+  
+  <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+
+        فوياج:من نويتيكاعطر منعش بأجواء بحرية يمزج بين التفاح الأخضر والنوتات الخشبية ليمنح إحساسًا بالحيوية والنشاط
+          حجم 40مللي:185ج
+          حجم 50مللي:225ج
+          حجم 80مللي:350ج
+          حجم 100مللي:400ج
+  
+  
+      </div>
+    </div>
+  </div>
+
+<div class="product-card">
+  <img src="هيرمز.png" alt="عطور شرقية" class="product-image">
+
+  <p onclick="oudharmaing('oudharmaing')" class="product-name"> تريد هيرمز</p>
+      <button class="product-button" onclick="location.href='order.html?product= تريد هيرمز'">اطلب الان</button>
+
+  <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+
+
+        تريد هيرمز: عطر جذاب بلمسات راقية تجمع بين القوة والانتعاش، مناسب لجميع الأوقات.
+        حجم 40مللي:250ج
+    حجم 50مللي:300ج
+    حجم 80مللي:450ج
+    حجم 100مللي:500ج
+
+      </div>
+    </div>
+</div>
+
+
+
+
+<div class="product-card">
+<img src="بوما اسبورت.png" alt="عطور شرقية" class="product-image">
+
+<p onclick="oudharmaing('oudharmaing')" class="product-name"> بوما اسبورت</p>
+      <button class="product-button" onclick="location.href='order.html?product=بوما اسبورت'">اطلب الان</button>
+
+<div class="tooltip">
+ ! مرر لاظهار المعلومات
+  <div class="tooltiptext">
+
+
+    بوما سبورت: أروماتك حمضي بفوحان متوسط، عطر رياضي حيوي يجمع بين الانتعاش والخفة، مثالي للأجواء الحارة.
+    حجم 40مللي:185ج
+    حجم 50مللي:225ج
+    حجم 80مللي:350ج
+    حجم 100مللي:400ج
+
+  </div>
+</div>
+</div>
+
+
+
+
+  <div class="product-card">
+    <img src="بوما جام.png" alt="عطور شرقية" class="product-image">
+    
+    <p onclick="oudharmaing('oudharmaing')" class="product-name">بوما جام</p>
+      <button class="product-button" onclick="location.href='order.html?product=بوما جام'">اطلب الان</button>
+    
+    <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+  
+
+        بوما جام: خشبي أروماتك بفوحان متوسط، عطر شبابي غير رسمي، يتميز بالحيوية والعصرية
+        حجم 40مللي:185ج
+          حجم 50مللي:225ج
+          حجم 80مللي:350ج
+          حجم 100مللي:400ج
+
+      </div>
+    </div>
+    </div>
+
+    <div class="product-card">
+  <img src="دولسي.png" alt="عطور شرقية" class="product-image">
+  
+  <p onclick="oudharmaing('oudharmaing')" class="product-name"> دولسي اند جبانا ذا وان</p>
+      <button class="product-button" onclick="location.href='order.html?product= دولسي اند جبانا ذا وان'">اطلب الان</button>
+  
+  <div class="tooltip">
+   ! مرر لاظهار المعلومات
+    <div class="tooltiptext">
+
+
+      دولتشي آند غابانا: ذا وان عطر شرقي خشبي يجمع بين الأناقة والجاذبية، ويمنح حضورًا فخمًا يناسب الرجل الواثق. يتميز برائحة دافئة ومغرية تجعله مثاليًا للسهرات والمناسبات الخاصة.
+        حجم 40مللي:185ج
+        حجم 50مللي:225ج
+        حجم 80مللي:350ج
+        حجم 100مللي:400ج
+
+  
+  
+    </div>
+  </div>
+  </div>
+
+
+  <div class="product-card">
+    <img src="جوتشي راش.png" alt="عطور شرقية" class="product-image">
+    <p onclick="oudharmaing('oudharmaing')" class="product-name">جوتشي راش </p>
+      <button class="product-button" onclick="location.href='order.html?product=جوتشي راش'">اطلب الان</button>
+    
+    <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+
+        جوتشي راش:عطر جريء يتميز بمزيج من الزهور والنوتات الخشبية ليمنح طابعًا حسيًا ومغريًا
+                حجم 40مللي:185ج
+          حجم 50مللي:225ج
+          حجم 80مللي:350ج
+          حجم 100مللي:400ج
+
+      </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="product-card">
+      <img src="جوتشي عود.png" alt="عطور شرقية" class="product-image">
+      <p onclick="oudharmaing('oudharmaing')" class="product-name">  جوتشي عود</p>
+      <button class="product-button" onclick="location.href='order.html?product=جوتشي عود'">اطلب الان</button>
+      <div class="tooltip">
+       ! مرر لاظهار المعلومات
+        <div class="tooltiptext">
+
+          جوتشي عود:عطر شرقي راقٍ يجمع بين العود الفاخر والتوابل الدافئة ليضفي لمسة أنيقة ومميزة
+          حجم 40مللي:185ج
+            حجم 50مللي:225ج
+            حجم 80مللي:350ج
+            حجم 100مللي:400ج
+
+        </div>
+      </div>
+      </div>
+
+
+
+
+      <div class="product-card">
+        <img src="سيلفر سنت.png" alt="عطور شرقية" class="product-image">
+        <p onclick="oudharmaing('oudharmaing')" class="product-name"> سيلفر سنت </p>
+      <button class="product-button" onclick="location.href='order.html?product=سيلفر سنت'">اطلب الان</button>
+        
+        <div class="tooltip">
+         ! مرر لاظهار المعلومات
+          <div class="tooltiptext">
+
+
+            سيلفر سنت : خشبي بفوحان قوي جدًا، يتميز بمزيج من الحمضيات والتوابل والتبغ، مما يجعله جذابًا وفاخرًا.
+            حجم 40مللي:185ج
+            حجم 50مللي:225ج
+            حجم 80مللي:350ج
+            حجم 100مللي:400ج
+          </div>
+        </div>
+        </div>
+
+        <div class="product-card">
+          <img src="وان مان شو.png" alt="عطور شرقية" class="product-image">
+          
+          <p onclick="oudharmaing('oudharmaing')" class="product-name"> وان مان شو </p>
+      <button class="product-button" onclick="location.href='order.html?product=وان مان شو'">اطلب الان</button>
+          
+          <div class="tooltip">
+           ! مرر لاظهار المعلومات
+            <div class="tooltiptext">
+        
+
+
+              وان مان شو:عطر خشبي تابلي منعش بفوحان قوي، يتمتع برائحة قوية ومركزة تناسب الرجال الكلاسيكيين ومحبي العطور الثقيلة.
+              حجم 40مللي:185ج
+                حجم 50مللي:225ج
+                حجم 80مللي:350ج
+                حجم 100مللي:400ج
+        
+          
+          
+            </div>
+          </div>
+          </div>
+
+
+          <div class="product-card">
+            <img src="اوبن.png" alt="عطور شرقية" class="product-image">
+            <p onclick="oudharmaing('oudharmaing')" class="product-name">أوبن</p>
+      <button class="product-button" onclick="location.href='order.html?product=اوبن'">اطلب الان</button>
+            <div class="tooltip">
+             ! مرر لاظهار المعلومات
+              <div class="tooltiptext">
+
+
+
+                أوبن :عطر كلاسيكي يتميز برائحة أنيقة تناسب الرجل العصري، يمنح إحساسًا بالفخامة والثقة                
+                حجم 40مللي:185ج
+                  حجم 50مللي:225ج
+                  حجم 80مللي:350ج
+                  حجم 100مللي:400ج
+              </div>
+            </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="product-card">
+              <img src="فرزتشي .png" alt="عطور شرقية" class="product-image">
+              <p onclick="oudharmaing('oudharmaing')" class="product-name">فرزتشي بور هوم ديلان بلو </p>
+      <button class="product-button" onclick="location.href='order.html?product=فرزتشي بور هوم ديلان بلو     '">اطلب الان</button>
+              <div class="tooltip">
+               ! مرر لاظهار المعلومات
+                <div class="tooltiptext">
+  
+  
+
+                  فرزتشي بور هوم ديلان بلو: عطر ذكوري أنيق يجمع بين النوتات العطرية المنعشة والتوابل الدافئة ليعكس القوة والجاذبية تم اصداره 2025                  
+                  حجم 40مللي:185ج
+                    حجم 50مللي:225ج
+                    حجم 80مللي:350ج
+                    حجم 100مللي:400ج
+
+                </div>
+              </div>
+              </div>
+
+              <div class="product-card">
+                <img src="فرزتشي ايروس.png" alt="عطور شرقية" class="product-image">
+                <p onclick="oudharmaing('oudharmaing')" class="product-name"> فرزتشي ايروس</p>
+      <button class="product-button" onclick="location.href='order.html?product= فرزتشي ايروس'">اطلب الان</button>
+                <div class="tooltip">
+                 ! مرر لاظهار المعلومات
+                  <div class="tooltiptext">
+    
+    
+
+                    فرزاتشي إيروس:عطر ذكوري قوي يتميز بمزيج منعش من النعناع والفانيليا والنوتات الخشبية ليمنح طابعًا جريئًا وحيويًا
+                    
+                    حجم 40مللي:185ج
+                      حجم 50مللي:225ج
+                      حجم 80مللي:350ج
+                      حجم 100مللي:400ج
+                  </div>
+                </div>
+                </div>
+                  
+                <div class="product-card">
+                  <img src="تشيلز.png" alt="عطور شرقية" class="product-image">
+                  <p onclick="oudharmaing('oudharmaing')" class="product-name">تشيلز </p>
+      <button class="product-button" onclick="location.href='order.html?product=تشيلز'">اطلب الان</button>
+                  <div class="tooltip">
+                   ! مرر لاظهار المعلومات
+                    <div class="tooltiptext">
+      
+      
+                      
+تشيلز :عطر مميز برائحة منعشة وعصرية تضفي لمسة من الحيوية والجاذبية.
+                      
+                      حجم 40مللي:185ج
+                        حجم 50مللي:225ج
+                        حجم 80مللي:350ج
+                        حجم 100مللي:400ج
+                    </div>
+                  </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="product-card">
+                    <img src="انفكتوس.png" alt="عطور شرقية" class="product-image">
+                  
+                    <p onclick="oudharmaing('oudharmaing')" class="product-name"> انفكتوس</p>
+                    <button class="product-button" onclick="location.href='order.html?product=انفكتوس'">اطلب الان</button>
+              
+                    <div class="tooltip">
+                       ! مرر لاظهار المعلومات
+                        <div class="tooltiptext">
+              
+              
+
+                          أنفكتوس:عطر مائي منعش و من اقوي مكوناته العنبر الطبيعي و تم اصداره 2013 
+                            حجم 40مللي:185ج
+                            حجم 50مللي:225ج
+                            حجم 80مللي:350ج
+                            حجم 100مللي:400ج
+              
+                        </div>
+                      </div>
+                </div>
+
+
+                <div class="product-card">
+                  <img src="انفكتوس اكوا.png" alt="عطور شرقية" class="product-image">
+                
+                  <p onclick="oudharmaing('oudharmaing')" class="product-name"> انفكتوس اكوا</p>
+                  <button class="product-button" onclick="location.href='order.html?product=انفكتوس اكوا'">اطلب الان</button>
+            
+                  <div class="tooltip">
+                     ! مرر لاظهار المعلومات
+                      <div class="tooltiptext">
+            
+            
+
+                        انفكتوس اكوا : عطر منعش و حيوي يتميز من نفحات البحرية و الحمضيات ,صدر 2016
+                          حجم 40مللي:185ج
+                          حجم 50مللي:225ج
+                          حجم 80مللي:350ج
+                          حجم 100مللي:400ج
+            
+                      </div>
+                    </div>
+              </div>
+
+
+              <div class="product-card">
+                <img src="انفكتوس فيكتوري.png" alt="عطور شرقية" class="product-image">
+              
+                <p onclick="oudharmaing('oudharmaing')" class="product-name"> انفكتوس فيكتوري</p>
+                <button class="product-button" onclick="location.href='order.html?product= انفكتوس فيكتوري'">اطلب الان</button>
+          
+                <div class="tooltip">
+                   ! مرر لاظهار المعلومات
+                    <div class="tooltiptext">
+          
+          
+
+                      أنفكتوس فيكتوري:عطر مسكر مع لمسة قرفة تم اصداره 2020
+                        حجم 40مللي:185ج
+                        حجم 50مللي:225ج
+                        حجم 80مللي:350ج
+                        حجم 100مللي:400ج
+          
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="product-card">
+              <img src="انفكتوس انتنس.png" alt="عطور شرقية" class="product-image">
+            
+              <p onclick="oudharmaing('oudharmaing')" class="product-name"> انفكتوس انتنس</p>
+              <button class="product-button" onclick="location.href='order.html?product=انفكتوس انتنس'">اطلب الان</button>
+        
+              <div class="tooltip">
+                 ! مرر لاظهار المعلومات
+                  <div class="tooltiptext">
+        
+        
+
+                    أنفكتوس أنتنس :عطر شرقي خشبي حار من عطور الويسكي مع لمسة توابل دافئة ,صدر 2017
+                    حجم 40مللي:200ج
+                    حجم 50مللي:250ج
+                    حجم 80مللي:400ج
+                    حجم 100مللي:450ج
+        
+                  </div>
+                </div>
+          </div>
+
+
+          <div class="product-card">
+            <img src="اكس اس.png" alt="عطور شرقية" class="product-image">
+          
+            <p onclick="oudharmaing('oudharmaing')" class="product-name"> بلاك اكس اس</p>
+            <button class="product-button" onclick="location.href='order.html?product= بلاك اكس اس '">اطلب الان</button>
+      
+            <div class="tooltip">
+               ! مرر لاظهار المعلومات
+                <div class="tooltiptext">
+      
+      
+
+                  بلاك اكس اس   2018 – عطر رجالي شرقي حار من باكو رابان، يجمع بين القرفة، الليمون، والبرالين، مناسب للأمسيات الجريئة.
+                    حجم 40مللي:185ج
+                    حجم 50مللي:225ج
+                    حجم 80مللي:350ج
+                    حجم 100مللي:400ج
+      
+                </div>
+              </div>
+        </div>
+
+
+        <div class="product-card">
+          <img src="ليجزس.png" alt="عطور شرقية" class="product-image">
+        
+          <p onclick="oudharmaing('oudharmaing')" class="product-name"> بلاك اكس اس ليجزس</p>
+          <button class="product-button" onclick="location.href='order.html?product= بلاك اكس اس ليجزس'">اطلب الان</button>
+    
+          <div class="tooltip">
+             ! مرر لاظهار المعلومات
+              <div class="tooltiptext">
+    
+    
+
+                بلاك ليجزس– عطر مسكر مع  لمسة تفاح اخضر الاكثر مبيعا في الصيف 
+                حجم 40مللي:185ج
+                  حجم 50مللي:225ج
+                  حجم 80مللي:350ج
+                  حجم 100مللي:400ج
+    
+              </div>
+            </div>
+      </div>
+
+      <div class="product-card">
+        <img src="فانتوم.png" alt="عطور شرقية" class="product-image">
+      
+        <p onclick="oudharmaing('oudharmaing')" class="product-name"> فانتوم</p>
+        <button class="product-button" onclick="location.href='order.html?product=فانتوم'">اطلب الان</button>
+  
+        <div class="tooltip">
+           ! مرر لاظهار المعلومات
+            <div class="tooltiptext">
+
+              فانتوم – عطر رجالي مستقبلي من باكو رابان، صدر عام 2021، برائحة حمضية خشبية منعشة مع لمسة كريمية من اللافندر والفانيليا
+              حجم 40مللي:185ج
+                حجم 50مللي:225ج
+                حجم 80مللي:350ج
+                حجم 100مللي:400ج
+  
+            </div>
+          </div>
+    </div>
+
+
+    <div class="product-card">
+      <img src="فانتوم انتنس.png" alt="عطور شرقية" class="product-image">
+    
+      <p onclick="oudharmaing('oudharmaing')" class="product-name"> فانتوم انتنس</p>
+      <button class="product-button" onclick="location.href='order.html?product= فانتوم انتنس'">اطلب الان</button>
+
+      <div class="tooltip">
+         ! مرر لاظهار المعلومات
+          <div class="tooltiptext">
+
+
+
+            فانتوم إنتنس – إصدار أكثر جرأة من فانتوم، صدر عام 2023، بتركيبة دافئة من الفانيليا، الباتشولي، وخشب الأرز
+              حجم 40مللي:200ج
+              حجم 50مللي:250ج
+              حجم 80مللي:400ج
+              حجم 100مللي:450ج
+
+          </div>
+        </div>
+  </div>
+
+
+  <div class="product-card">
+    <img src="وان مليون.png" alt="عطور شرقية" class="product-image">
+  
+    <p onclick="oudharmaing('oudharmaing')" class="product-name"> وان مليون</p>
+    <button class="product-button" onclick="location.href='order.html?product= وان مليون '">اطلب الان</button>
+
+    <div class="tooltip">
+       ! مرر لاظهار المعلومات
+        <div class="tooltiptext">
+
+
+          وان مليون – العطر الأيقوني من باكو رابان، صدر عام 2008، برائحة شرقية حارة من القرفة، اليوسفي، والجلد
+            حجم 40مللي:185ج
+            حجم 50مللي:225ج
+            حجم 80مللي:350ج
+            حجم 100مللي:400ج
+
+        </div>
+      </div>
+</div>
+
+<div class="product-card">
+  <img src="وان مليون لاكي.png" alt="عطور شرقية" class="product-image">
+
+  <p onclick="oudharmaing('oudharmaing')" class="product-name"> وان مليون لاكي</p>
+  <button class="product-button" onclick="location.href='order.html?product= وان مليون لاكي'">اطلب الان</button>
+
+  <div class="tooltip">
+     ! مرر لاظهار المعلومات
+      <div class="tooltiptext">
+
+
+
+        وان مليون لاكي – إصدار شبابي منعش من وان مليون، صدر عام 2018، يجمع بين البرقوق، العسل، والبندق
+          حجم 40مللي:185ج
+          حجم 50مللي:225ج
+          حجم 80مللي:350ج
+          حجم 100مللي:400ج
+
+      </div>
+    </div>
+</div>
+
+
+<div class="product-card">
+<img src="وان مليون بريف.png" alt="عطور شرقية" class="product-image">
+
+<p onclick="oudharmaing('oudharmaing')" class="product-name"> وان مليون بريف</p>
+<button class="product-button" onclick="location.href='order.html?product= وان مليون بريف'">اطلب الان</button>
+
+<div class="tooltip">
+   ! مرر لاظهار المعلومات
+    <div class="tooltiptext">
+
+
+      ان مليون بريف – نسخة أعمق وأكثر دفئًا، صدر عام 2016، برائحة العنبر، التونكا، والقرفة، يناسب الأجواء الباردة والمناسبات المسائية
+      حجم 40مللي:250ج
+      حجم 50مللي:300ج
+      حجم 80مللي:450ج
+      حجم 100مللي:500ج
+    </div>
+  </div>
+</div>
+
+
+<div class="product-card">
+<img src="وان مليون عود.png" alt="عطور شرقية" class="product-image">
+
+<p onclick="oudharmaing('oudharmaing')" class="product-name"> وان مليون عود</p>
+<button class="product-button" onclick="location.href='order.html?product= وان مليون عود'">اطلب الان</button>
+
+<div class="tooltip">
+ ! مرر لاظهار المعلومات
+  <div class="tooltiptext">
+
+
+
+    وان مليون عود – إصدار شرقي فاخر، برائحة العود والتوابل، مثالي لعشاق الروائح الشرقية الفخمة
+    حجم 40مللي:280ج
+    حجم 50مللي:350ج
+    حجم 80مللي:500ج
+    حجم 100مللي:600ج
+
+  </div>
+</div>
+</div>
+  </main>
+
+</body>
+
+</html>
+
+
+<script>
+  //o دالة للتنقل إلى صفحة العطور الشرقية
+  function order() {
+  window.location.href = "order.html";
+  }
+  
+</script>
