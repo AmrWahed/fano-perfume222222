@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<div id="products">
+
+  <div class="card">
+    <h3 class="name">Dior Sauvage</h3>
+    <p class="desc">عطر رجالي قوي وفخم</p>
+    <span class="price">200</span>
+  </div>
+
+  <div class="card">
+    <h3 class="name">Bleu de Chanel</h3>
+    <p class="desc">عطر أنيق مناسب للخروج</p>
+    <span class="price">250</span>
+  </div>
+
+  <div class="card">
+    <h3 class="name">Armani Code</h3>
+    <p class="desc">عطر جذاب للمناسبات</p>
+    <span class="price">180</span>
+  </div>
+
+    <div class="card">
+    <h3 class="name">Armani Code</h3>
+    <p class="desc">عطر جذاب للمناسبات</p>
+    <span class="price">180</span>
+  </div>
+<input type="text" id="search" placeholder="ابحث عن منتج...">
+</div>
+
+<script>
+
+const searchInput = document.getElementById("search");
+const cards = document.querySelectorAll(".card");
+
+searchInput.addEventListener("input", function () {
+    const value = this.value.toLowerCase().trim();
+
+    cards.forEach(card => {
+        const name = card.querySelector(".name").textContent.toLowerCase();
+        const desc = card.querySelector(".desc").textContent.toLowerCase();
+
+        if (name.includes(value) || desc.includes(value)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
